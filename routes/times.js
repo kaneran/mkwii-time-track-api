@@ -1,16 +1,17 @@
 const app = require("express");
-const createTime = require("../controllers/timesController");
+const timesController = require("../controllers/timesController");
 const router = app.Router();
 
 router.post("/add", async (req, res) => {
-  const response = await createTime(req, res);
+  const response = await timesController.createTime(req);
   res.send(response);
 });
 
-router.get("/:trackId", (req, res) => {
+router.get("/track/:trackId", async (req, res) => {
   const { trackId } = req.params;
   console.log(trackId);
-  res.send("Get times for track id " + trackId);
+  const response = await timesController.getTimesForTrack(trackId);
+  res.send(response);
 });
 
 module.exports = router;

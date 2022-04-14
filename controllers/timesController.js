@@ -1,7 +1,7 @@
 const pool = require("../database");
 
 const insertTimeQuery = {
-  text: "INSERT INTO track_time(track_id, time, format) VALUES ($1, $2, $3)",
+  text: "INSERT INTO track_time(track_id, time, format, date_achieved) VALUES ($1, $2, $3, $4)",
   values: [],
 };
 
@@ -13,9 +13,14 @@ const selectTimeQuery = {
   values: [],
 };
 
-const createTime = async (req, res) => {
-  const { track_id, time, format } = req.body;
-  insertTimeQuery.values = [track_id, time, format];
+const selectTimesQuery = {
+  text: "SELECT track_time_id, time, format, date_achieved FROM track_time where track_id = $1",
+  values: [],
+};
+
+const createTime = async (req) => {
+  const { track_id, time, format, date_achieved } = req.body;
+  insertTimeQuery.values = [track_id, time, format, date_achieved];
   await pool.query(insertTimeQuery);
   await createTimeBreakdown(req.body);
   return "Successfully added time!";
@@ -34,4 +39,11 @@ const createTimeBreakdown = async ({ track_id, time, breakdown }) => {
   });
 };
 
-module.exports = createTime;
+const getTimesForTrack = async (track_id) => {
+  selectTimesQuery.values = [track_id];
+  const result = await pool.query(selectTimesQuery);
+  console.log(result);
+  return result.rows;
+};
+
+module.exports = { createTime, getTimesForTrack };
