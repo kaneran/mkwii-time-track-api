@@ -1,0 +1,117 @@
+[
+  {
+    "shortcut_id": 2,
+    "track_id": 3,
+    "name": "hi"
+  },
+  {
+    "shortcut_id": 3,
+    "track_id": 3,
+    "name": "Mudskip"
+  },
+  {
+    "shortcut_id": 4,
+    "track_id": 3,
+    "name": "Box clip"
+  },
+  {
+    "shortcut_id": 5,
+    "track_id": 2,
+    "name": "Jump skip before last turn"
+  },
+  {
+    "shortcut_id": 6,
+    "track_id": 4,
+    "name": "Bounce trick"
+  },
+  {
+    "shortcut_id": 7,
+    "track_id": 5,
+    "name": "Side tricks in mall"
+  },
+  {
+    "shortcut_id": 8,
+    "track_id": 5,
+    "name": "Low trick on staircase"
+  },
+  {
+    "shortcut_id": 9,
+    "track_id": 6,
+    "name": "Superman"
+  },
+  {
+    "shortcut_id": 10,
+    "track_id": 7,
+    "name": "Pipe bounce"
+  },
+  {
+    "shortcut_id": 11,
+    "track_id": 7,
+    "name": "Mid air first turn"
+  },
+  {
+    "shortcut_id": 12,
+    "track_id": 7,
+    "name": "Mid air before ramp"
+  },
+  {
+    "shortcut_id": 13,
+    "track_id": 7,
+    "name": "Mid air upon exiting mine"
+  },
+  {
+    "shortcut_id": 14,
+    "track_id": 9,
+    "name": "Ultra ultra cut done by Justin"
+  },
+  {
+    "shortcut_id": 15,
+    "track_id": 9,
+    "name": "Grass skip"
+  },
+  {
+    "shortcut_id": 16,
+    "track_id": 9,
+    "name": "Doom rock glide"
+  },
+  {
+    "shortcut_id": 17,
+    "track_id": 11,
+    "name": "Log bounce"
+  },
+  {
+    "shortcut_id": 18,
+    "track_id": 11,
+    "name": "Start cut"
+  },
+  {
+    "shortcut_id": 19,
+    "track_id": 10,
+    "name": "Lava mud skip"
+  },
+  {
+    "shortcut_id": 20,
+    "track_id": 13,
+    "name": "Ultra cut"
+  },
+  {
+    "shortcut_id": 21,
+    "track_id": 13,
+    "name": "Sand skip before finish line"
+  },
+  {
+    "shortcut_id": 22,
+    "track_id": 13,
+    "name": "Trick transition"
+  },
+  {
+    "shortcut_id": 23,
+    "track_id": 14,
+    "name": "Glitch inside"
+  },
+  {
+    "shortcut_id": 24,
+    "track_id": 15,
+    "name": "Ultra cut"
+  }
+]

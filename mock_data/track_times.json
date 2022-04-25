@@ -1,0 +1,250 @@
+[
+  {
+    "track_time_id": 0,
+    "track_id": 3,
+    "time": "01:08.859",
+    "format": "non_shortcut",
+    "date_achieved": "14-4-2022 6:55:38",
+    "breakdown": []
+  },
+  {
+    "track_time_id": 1,
+    "track_id": 3,
+    "time": "01:09.178",
+    "format": "non_shortcut",
+    "date_achieved": "12-3-2022 7:25:42",
+    "breakdown": []
+  },
+  {
+    "track_time_id": 2,
+    "track_id": 3,
+    "time": "01:10.111",
+    "format": "non_shortcut",
+    "date_achieved": "14-2-2022 8:15:11",
+    "breakdown": []
+  },
+  {
+    "track_time_id": 3,
+    "track_id": 3,
+    "time": "01:11.222",
+    "format": "non_shortcut",
+    "date_achieved": "3-1-2022 4:15:28",
+    "breakdown": []
+  },
+  {
+    "track_time_id": 4,
+    "track_id": 3,
+    "time": "00:43.341",
+    "format": "shortcut",
+    "date_achieved": "25-1-2022 6:55:38",
+    "breakdown": [
+      {
+        "shortcut_id": 2,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      }
+    ]
+  },
+  {
+    "track_time_id": 5,
+    "track_id": 3,
+    "time": "00:42.158",
+    "format": "shortcut",
+    "date_achieved": "2-2-2022 7:25:42",
+    "breakdown": [
+      {
+        "shortcut_id": 2,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      }
+    ]
+  },
+  {
+    "track_time_id": 6,
+    "track_id": 3,
+    "time": "00:36.121",
+    "format": "shortcut",
+    "date_achieved": "14-3-2022 8:15:11",
+    "breakdown": [
+      {
+        "shortcut_id": 2,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      }
+    ]
+  },
+  {
+    "track_time_id": 7,
+    "track_id": 3,
+    "time": "00:35.112",
+    "format": "shortcut",
+    "date_achieved": "14-4-2022 4:15:28",
+    "breakdown": [
+      {
+        "shortcut_id": 2,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 2,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 3,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 1,
+        "shortcut_achieved": true
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 2,
+        "shortcut_achieved": false
+      },
+      {
+        "shortcut_id": 4,
+        "lap_count": 3,
+        "shortcut_achieved": true
+      }
+    ]
+  }
+]
