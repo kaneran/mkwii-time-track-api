@@ -1,34 +1,162 @@
 [
-  { "name": "Luigi Circuit", "id": 0 },
-  { "name": "Moo Moo Meadows", "id": 1 },
-  { "name": "Mushroom Gorge", "id": 2 },
-  { "name": "Toad's Factory", "id": 3 },
-  { "name": "Mario Circuit", "id": 4 },
-  { "name": "Coconut Mall", "id": 5 },
-  { "name": "DK Summit", "id": 6 },
-  { "name": "Wario's Gold Mine", "id": 7 },
-  { "name": "Daisy Circuit", "id": 8 },
-  { "name": "Koopa Cape", "id": 9 },
-  { "name": "Maple Treeway", "id": 11 },
-  { "name": "Grumble Volcano", "id": 10 },
-  { "name": "Dry Dry Ruins", "id": 13 },
-  { "name": "Moonview Highway", "id": 12 },
-  { "name": "Bowser's Castle", "id": 14 },
-  { "name": "Rainbow Road", "id": 15 },
-  { "name": "GCN Peach Beach", "id": 24 },
-  { "name": "DS Yoshi Falls", "id": 28 },
-  { "name": "SNES Ghost Valley 2", "id": 17 },
-  { "name": "N64 Mario Raceway", "id": 21 },
-  { "name": "N64 Sherbet Land", "id": 20 },
-  { "name": "GBA Shy Guy Beach", "id": 16 },
-  { "name": "DS Delfino Square", "id": 31 },
-  { "name": "GCN Waluigi Stadium", "id": 26 },
-  { "name": "DS Desert Hills", "id": 29 },
-  { "name": "GBA Bowser Castle 3", "id": 19 },
-  { "name": "N64 DK's Jungle Parkway", "id": 22 },
-  { "name": "GCN Mario Circuit", "id": 25 },
-  { "name": "SNES Mario Circuit 3", "id": 18 },
-  { "name": "DS Peach Gardens", "id": 30 },
-  { "name": "GCN DK Mountain", "id": 27 },
-  { "name": "N64 Bowser's Castle", "id": 23 }
+  {
+    "track_id": "0",
+    "name": "Luigi Circuit",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "1",
+    "name": "Moo Moo Meadows",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "2",
+    "name": "Mushroom Gorge",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "3",
+    "name": "Toads Factory",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "4",
+    "name": "Mario Circuit",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "5",
+    "name": "Coconut Mall",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "6",
+    "name": "DK Summit",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "7",
+    "name": "Warios Gold Mine",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "8",
+    "name": "Daisy Circuit",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "9",
+    "name": "Koopa Cape",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "10",
+    "name": "Grumble Volcano",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "11",
+    "name": "Maple Treeway",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "12",
+    "name": "Moonview Highway",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "13",
+    "name": "Dry Dry Ruins",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "14",
+    "name": "Bowsers Castle",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "15",
+    "name": "Rainbow Road",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "16",
+    "name": "GBA Shy Guy Beach",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "17",
+    "name": "SNES Ghost Valley 2",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "18",
+    "name": "SNES Mario Circuit 3",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "19",
+    "name": "GBA Bowser Castle 3",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "20",
+    "name": "N64 Sherbet Land",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "21",
+    "name": "N64 Mario Raceway",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "22",
+    "name": "N64 DKs Jungle Parkway",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "23",
+    "name": "N64 Bowsers Castle",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "24",
+    "name": "GCN Peach Beach",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "25",
+    "name": "GCN Mario Circuit",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "26",
+    "name": "GCN Waluigi Stadium",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "27",
+    "name": "GCN DK Mountain",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "28",
+    "name": "DS Yoshi Falls",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "29",
+    "name": "DS Desert Hills",
+    "has_shortcut": true
+  },
+  {
+    "track_id": "30",
+    "name": "DS Peach Gardens",
+    "has_shortcut": false
+  },
+  {
+    "track_id": "31",
+    "name": "DS Delfino Square",
+    "has_shortcut": false
+  }
 ]
