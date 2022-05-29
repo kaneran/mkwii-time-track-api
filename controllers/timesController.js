@@ -18,14 +18,18 @@ const selectTimesQuery = {
   values: [],
 };
 
-const createTime = async (req) => {
+const createTime = async (req, res) => {
   const { track_id, time, format, date_achieved } = req.body;
   insertTimeQuery.values = [track_id, time, format, date_achieved];
-  await pool.query(insertTimeQuery);
+  await pool.query(insertTimeQuery, (err, result) => {
+    if (err) {
+      res.send("Something went wrong!");
+    }
+  });
   if (req.body.breakdown) {
     await createTimeBreakdown(req.body);
   }
-  return "Successfully added time!";
+  return res.send("Successfully added time!");
 };
 
 const createTimeBreakdown = async ({ track_id, time, breakdown }) => {

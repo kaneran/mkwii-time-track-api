@@ -3,8 +3,7 @@ const timesController = require("../controllers/timesController");
 const router = app.Router();
 
 router.post("/add", async (req, res) => {
-  const response = await timesController.createTime(req);
-  res.send(response);
+  const response = await timesController.createTime(req, res);
 });
 
 router.get("/track/:trackId", async (req, res) => {
