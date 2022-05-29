@@ -22,7 +22,9 @@ const createTime = async (req) => {
   const { track_id, time, format, date_achieved } = req.body;
   insertTimeQuery.values = [track_id, time, format, date_achieved];
   await pool.query(insertTimeQuery);
-  await createTimeBreakdown(req.body);
+  if (req.body.breakdown) {
+    await createTimeBreakdown(req.body);
+  }
   return "Successfully added time!";
 };
 
