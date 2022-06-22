@@ -13,8 +13,18 @@ const selectTimeQuery = {
   values: [],
 };
 
+const selectTimeQuery2 = {
+  text: "SELECT * FROM track_time where track_time_id  = $1",
+  values: [],
+}
+
 const selectTimesQuery = {
-  text: "SELECT track_time_id, time, format, date_achieved FROM track_time where track_id = $1",
+  text: "SELECT track_time_id, track_id, time, format, date_achieved FROM track_time where track_id = $1",
+  values: [],
+};
+
+const selectBreakdownQuery = {
+  text: "SELECT shortcut_id, track_time_id, lap_count, shortcut_achieved FROM time_shortcut_breakdown where track_time_id = $1",
   values: [],
 };
 
@@ -24,11 +34,10 @@ const createTime = async (req, res) => {
   await pool.query(insertTimeQuery, (err, result) => {
     if (err) {
       res.send("Something went wrong!");
+    } else if(result && req.body.breakdown){
+      createTimeBreakdown(req.body);
     }
   });
-  if (req.body.breakdown) {
-    await createTimeBreakdown(req.body);
-  }
   return res.send("Successfully added time!");
 };
 
@@ -45,11 +54,32 @@ const createTimeBreakdown = async ({ track_id, time, breakdown }) => {
   });
 };
 
+const getTimes = async (timeId) => {
+  selectTimeQuery2.values = [timeId];
+  const result = await pool.query(selectTimeQuery2);
+  return result.rows;
+}
+
 const getTimesForTrack = async (track_id) => {
   selectTimesQuery.values = [track_id];
   const result = await pool.query(selectTimesQuery);
-  console.log(result);
   return result.rows;
 };
 
-module.exports = { createTime, getTimesForTrack };
+const getBreakdown = async (track_time_id) => {
+  selectBreakdownQuery.values = [track_time_id];
+  const result = await pool.query(selectBreakdownQuery);
+  return result.rows;
+}
+
+const getTimesWithBreakdown = async (track_times) => {
+  const response =  await Promise.all(track_times?.map(async (track_time) => {
+    const breakdown = await getBreakdown(track_time.track_time_id);
+    return {...track_time, breakdown};
+  }))
+  return response;
+}
+
+
+
+module.exports = { createTime, getTimesForTrack, getBreakdown , getTimes, getTimesWithBreakdown};
