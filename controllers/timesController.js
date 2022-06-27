@@ -1,7 +1,7 @@
 const pool = require('../database');
 
 const insertTimeQuery = {
-  text: 'INSERT INTO track_time(track_id, time, format, date_achieved) VALUES ($1, $2, $3, $4)',
+  text: 'INSERT INTO track_time(track_id, time, format, date_achieved, deleted) VALUES ($1, $2, $3, $4, $5)',
   values: [],
 };
 
@@ -23,13 +23,18 @@ const selectTimesQuery = {
 };
 
 const selectBreakdownQuery = {
-  text: 'SELECT shortcut_id, track_time_id, lap_count, shortcut_achieved FROM time_shortcut_breakdown where track_time_id = $1',
+  text: 'SELECT shortcut_id, track_time_id, lap_count, shortcut_achieved FROM time_shortcut_breakdown where track_time_id = $1 order by lap_count',
   values: [],
 };
 
+const updateTrackVisibilityQuery = {
+  text: 'UPDATE track_time SET deleted = $1 WHERE track_time_id = $2',
+  values: []
+}
+
 const createTime = async (req, res) => {
-  const { track_id, time, format, date_achieved } = req.body;
-  insertTimeQuery.values = [track_id, time, format, date_achieved];
+  const { track_id, time, format, date_achieved, deleted } = req.body;
+  insertTimeQuery.values = [track_id, time, format, date_achieved, deleted];
   await pool.query(insertTimeQuery, (err, result) => {
     if (err) {
       res.send('Something went wrong!');
@@ -86,4 +91,17 @@ const getTimesWithBreakdown = async (track_times) => {
   return response;
 };
 
-module.exports = { createTime, getTimesForTrack, getBreakdown, getTimes, getTimesWithBreakdown };
+const deleteTime = async (doDelete, req, res) => {
+  const {timeId} = req.params;
+  console.log(timeId);
+  updateTrackVisibilityQuery.values = [doDelete, timeId];
+  await pool.query(updateTrackVisibilityQuery);
+  if(doDelete){
+    res.send('Deleted time!');
+  } else {
+    res.send('Time undone!');
+  }
+  
+}
+
+module.exports = { createTime, getTimesForTrack, getBreakdown, getTimes, getTimesWithBreakdown, deleteTime };
