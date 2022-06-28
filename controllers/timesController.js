@@ -18,7 +18,7 @@ const selectTimeQuery2 = {
 };
 
 const selectTimesQuery = {
-  text: 'SELECT track_time_id, track_id, time, format, date_achieved FROM track_time where track_id = $1',
+  text: 'SELECT track_time_id, track_id, time, format, date_achieved FROM track_time where track_id = $1 order by track_time_id',
   values: [],
 };
 

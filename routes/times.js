@@ -3,7 +3,17 @@ const timesController = require('../controllers/timesController');
 const router = app.Router();
 
 router.post('/add', async (req, res) => {
-  const response = await timesController.createTime(req, res);
+  if (
+    req.body.track_id !== undefined &&
+    req.body.time !== undefined &&
+    req.body.format !== undefined &&
+    req.body.date_achieved !== undefined &&
+    req.body.deleted !== undefined
+  ) {
+    await timesController.createTime(req, res);
+  } else {
+    res.status(500).send('Invalid data in payload');
+  }
 });
 
 router.put('/delete/:timeId', async (req, res) => {
