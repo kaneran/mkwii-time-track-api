@@ -16,11 +16,11 @@ router.post('/add', async (req, res) => {
   }
 });
 
-router.put('/delete/:timeId', async (req, res) => {
+router.patch('/delete/:timeId', async (req, res) => {
   await timesController.deleteTime(true, req, res);
 });
 
-router.put('/undo/:timeId', async (req, res) => {
+router.patch('/undo/:timeId', async (req, res) => {
   await timesController.deleteTime(false, req, res);
 })
 
